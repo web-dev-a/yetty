@@ -19,7 +19,7 @@
         <ul class="tag__items display-flex">
           {% for tag in tags -%}
             {% if tag !== 'posts' %}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              {% set tagUrl %}/catalog/{{ tag }}/{% endset %}
               <li class="tag__item">
                 <a class="tag__link" href="{{ tagUrl | url }}">{{ tag }}</a>
               </li>

@@ -2,7 +2,7 @@
   {% for tag in params
     .tags
     .sort() %}
-    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    {% set tagUrl %}/catalog/{{ tag }}/{% endset %}
     <li class="tag__item">
       <a class="tag__link" href="{{ tagUrl | url }}">{{ tag }}</a>
     </li>
