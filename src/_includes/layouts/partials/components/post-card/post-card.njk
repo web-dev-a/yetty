@@ -16,7 +16,7 @@
         {# An alternative way to filter the generic tags from posts.json can be seen here https://stackoverflow.com/questions/66261187/11ty-how-to-display-post-tags-in-my-post-njk-file #}
         {%- if params.tagList.indexOf(tag) != -1 -%}
           <li class="post-card__tag">
-            <span>#{{ tag }}</span>
+            <span>{{ tag }}</span>
           </li>
         {% endif %}
       {%- endfor %}
