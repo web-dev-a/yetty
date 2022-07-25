@@ -30,13 +30,4 @@
   {% if params.post.data.description %}
     <p>{{ params.post.data.description }}</p>
   {% endif %}
-  {%- if params.post.date %}
-    <div class="post-card__date-time">
-      <time class="post-card__date text-muted font-sm" datetime="{{ params.post.date | dateStringISO }}">
-        {{ params.post.date | dateFilter }}
-      </time>
-      <span class="font-bold" aria-hidden="true">&middot;</span>
-      <span class="post-card__time text-muted font-sm">{{ params.post | readingTime }} read</span>
-    </div>
-  {% endif %}
 </div>
