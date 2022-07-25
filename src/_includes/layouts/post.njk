@@ -58,11 +58,10 @@
                 symbolId: "icon-chevron-left",
                 screenReader: "Chevron left"
               }) }}
-              Next
-            </span>
-            <a class="post__next--link" href="{{ nextPost.url | url }}">
-              {{ nextPost.data.title }}
+              <a class="post__next--link" href="{{ nextPost.url | url }}">
+              В каталог
             </a>
+            </span>
           </li>
         {% endif %}
         {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}

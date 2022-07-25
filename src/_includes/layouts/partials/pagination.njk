@@ -19,7 +19,7 @@
         <li class="pager__item pager__number pager__{{ loop.index }}{% if page.url == pagination.hrefs[loop.index0] %} pager__current{% endif %}">
           {% if page.url !== pagination.hrefs[loop.index0] %}
             <a class="pager__link" href="{{ pagination.hrefs[ loop.index0 ] }}">
-              <span class="pager__content" aria-label="Go to Page {{ loop.index }}">{{ loop.index }}</span>
+              <span class="pager__content" aria-label="Перейти на страницу {{ loop.index }}">{{ loop.index }}</span>
             </a>
           {% else %}
             <span class="pager__content" aria-label="Current Page, Page {{ loop.index }}" aria-current="true">{{ loop.index }}</span>
