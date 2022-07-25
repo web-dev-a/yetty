@@ -47,9 +47,8 @@
     <footer class="post__footer">
       <hr>
       <ul class="post__next-prev">
-        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-        {%- if nextPost %}
           <li class="post__next">
+            <a class="post__next--link" href="{{ nextPost.url | url }}">
             <span class="post__next--label">
               {{ component('svg-icon', {
                 svgWidth: 24,
@@ -58,41 +57,13 @@
                 symbolId: "icon-chevron-left",
                 screenReader: "Chevron left"
               }) }}
-              <a class="post__next--link" href="{{ nextPost.url | url }}">
               В каталог
             </a>
             </span>
           </li>
-        {% endif %}
-        {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-        {%- if previousPost %}
-          <li class="post__prev{%- if not nextPost %} ml-md-auto{% endif %}">
-            <span class="post__prev--label">
-              Previous
-              {{ component('svg-icon', {
-                svgWidth: 24,
-                svgHeight: 24,
-                svgClass: "post__prev--icon",
-                symbolId: "icon-chevron-right",
-                screenReader: "Chevron right"
-              }) }}
-            </span>
-            <a class="post__prev--link" href="{{ previousPost.url | url }}">
-              {{ previousPost.data.title }}
-            </a>
-          </li>
-        {% endif %}
       </ul>
     </footer>
 
   </article>
 {% endblock %}
 
-{% block js %}
-  {% if page.url === '/catalog/mermaid_test/' %}
-    <script src="{{ '/assets/scripts/vendors/mermaid.min.js' | url }}"></script>
-    <script>
-      mermaid.initialize({startOnLoad: true});
-    </script>
-  {% endif %}
-{% endblock %}
