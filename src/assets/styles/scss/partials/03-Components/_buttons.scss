@@ -9,6 +9,8 @@
   text-decoration: none;
 
   &:hover {
+    background-color: var(--body-font-color-alt);
+    color: var(--body-font-color);
     cursor: pointer;
   }
 
