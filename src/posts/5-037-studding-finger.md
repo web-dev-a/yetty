@@ -11,7 +11,7 @@ imgUrl: ./src/assets/images/5-037.png
 imgAlt: 5-037 Studding finger
 imgSize: '(min-width: 30em) 50vw, 100vw'
 pictureClass: grid-column-full
-imgClass: img-full
+imgClass: img-restricted
 imgBorderColor: '#000'
 layout: layouts/post.njk
 ---

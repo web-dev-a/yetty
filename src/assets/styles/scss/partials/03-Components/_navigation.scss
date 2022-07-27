@@ -59,17 +59,7 @@
   a {
     position: relative;
 
-    &::after {
-      position: absolute;
-      bottom: 42%;
-      left: var(--space-sm-2n);
-      width: calc(100% + var(--space-sm-4));
-      height: var(--space-sm-2);
-      transition: var(--transition-default);
-      background: var(--body-font-color);
-      content: "";
-      z-index: -1;
-    }
+
   }
 }
 
