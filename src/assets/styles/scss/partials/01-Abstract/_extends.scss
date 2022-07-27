@@ -38,7 +38,15 @@
 }
 
 %underline-dashed {
+  transition: var(--transition-default);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: var(--space-sm-1);
+  text-underline-offset: var(--space-sm-2);
 
+  &:hover {
+    text-decoration-style: solid;
+  }
 }
 
 %gradient-polka {
