@@ -100,6 +100,7 @@ p, .grid > *:not(figure):not(.hero), .tmpl-post article > *:not(figure):not(.her
 
 .footer__link, .post__content a:not(.direct-link), .post__prev--link,
 .post__next--link, .underline-dashed {
+  transition: var(--transition-default);
   text-decoration: underline;
   text-decoration-style: dashed;
   text-decoration-thickness: var(--space-sm-1);
@@ -367,7 +368,14 @@ h6,
   text-decoration: none; }
   .menu__link::after {
     position: absolute;
- }
+    bottom: 40%;
+    left: var(--space-sm-2n);
+    width: var(--space-0);
+    height: var(--space-sm-2);
+    transition: var(--transition-default);
+    background: var(--body-font-color);
+    content: "";
+    z-index: -1; }
   .menu__link:hover::after {
 }
   .menu__link:visited {
