@@ -36,14 +36,7 @@
 
   &::after {
     position: absolute;
-    bottom: 40%;
-    left: var(--space-sm-2n);
-    width: var(--space-0);
-    height: var(--space-sm-2);
-    transition: var(--transition-default);
-    background: var(--body-font-color);
-    content: "";
-    z-index: -1;
+
   }
 
   &:hover::after {
