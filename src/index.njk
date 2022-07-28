@@ -17,7 +17,7 @@ eleventyNavigation:
   </section>
 
   {% set maxPosts = collections.posts.length | min(3) %}
-  <h2>Latest {% if maxPosts == 1 %}post{% else %}posts{% endif %}
+  <h2>
   </h2>
 
   {% set postslist = collections.posts | head(-3) | reverse %}
