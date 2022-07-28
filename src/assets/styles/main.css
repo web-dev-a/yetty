@@ -102,7 +102,6 @@ p, .grid > *:not(figure):not(.hero), .tmpl-post article > *:not(figure):not(.her
 .post__next--link, .underline-dashed {
   transition: var(--transition-default);
   text-decoration: underline;
-  text-decoration-style: dashed;
   text-decoration-thickness: var(--space-sm-1);
   text-underline-offset: var(--space-sm-2); }
   .footer__link:hover, .post__content a:hover:not(.direct-link), .post__prev--link:hover,

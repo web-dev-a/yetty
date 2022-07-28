@@ -44,25 +44,6 @@
       {{ content | safe }}
     </div>
 
-    <footer class="post__footer">
-      <ul class="post__next-prev">
-          <li class="post__next">
-            <a class="post__next--link" href="{{ nextPost.url | url }}">
-            <span class="post__next--label">
-              {{ component('svg-icon', {
-                svgWidth: 24,
-                svgHeight: 24,
-                svgClass: "post__next--icon",
-                symbolId: "icon-chevron-left",
-                screenReader: "Chevron left"
-              }) }}
-              В каталог
-            </a>
-            </span>
-          </li>
-      </ul>
-    </footer>
-
   </article>
 {% endblock %}
 
