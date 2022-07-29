@@ -6,6 +6,12 @@
     aspect-ratio: 16 / 9;
   }
 
+  &-logo {
+    @extend %img;
+
+    width: 50%;
+  }
+
   &-post {
     @extend %img;
 
