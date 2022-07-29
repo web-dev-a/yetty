@@ -69,11 +69,11 @@ $colours: (
   --body-font-size: var(--font-size-md);
   --heading-font-color: var(--grey-800);
   --card-background: var(--white-850-a);
-  --footer-background: var(--grey-200);
+  --footer-background: #252f3f;
   --text-muted: var(--grey-700);
   --link-color: var(--blue);
   --link-color-alt: var(--purple);
-  --footer-color: var(--grey-800);
+  --footer-color: #d2d6dc;
 
   // Sans System fonts explanation:
   // The browser looks for each successive font, preferring the first one if // possible, and falls back to the next if it cannot find the font (on the // system or defined in CSS).
