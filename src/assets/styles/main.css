@@ -34,11 +34,11 @@
   --body-font-size: var(--font-size-md);
   --heading-font-color: var(--grey-800);
   --card-background: var(--white-850-a);
-  --footer-background: var(--grey-200);
+  --footer-background: #252f3f;
   --text-muted: var(--grey-700);
   --link-color: var(--blue);
   --link-color-alt: var(--purple);
-  --footer-color: var(--grey-800);
+  --footer-color: #d2d6dc;
   --sans-font-family: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen-sans, ubuntu, cantarell, "Helvetica Neue", helvetica, arial, sans-serif, apple color emoji, segoe ui emoji, cursive;
   --serif-font-family: constantia, "Lucida Bright", lucidabright, "Lucida Serif", lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", georgia, serif;
   --mono-font-family: "Source Code Pro", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
